@@ -1,0 +1,37 @@
+@import '../../../components/variables.css';
+
+.container {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.breadcrumb {
+  margin-bottom: 2rem;
+}
+
+:global{
+  .ant-breadcrumb-link{
+    color: #333;
+  }
+}
+
+.tipText {
+  width: 48%;
+  height: 31px;
+  line-height: 31px;
+  background: #f4f4f4;
+  color: #fa9640;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+  text-align: center;
+  margin-left: 6%;
+  margin-bottom: 2rem;
+}
+
+

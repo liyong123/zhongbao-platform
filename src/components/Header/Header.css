@@ -1,0 +1,90 @@
+
+
+@import '../variables.css';
+
+:root {
+  --brand-color: #61dafb;
+}
+
+.root {
+  height: 60px;
+  font-size: 16px;
+  background: #868B9F;
+ /* box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);*/
+  position: relative;
+  z-index: 997;
+}
+
+.logoArea {
+  float: left;
+  width: 250px;
+  height: 60px;
+  line-height: 58px;
+}
+
+
+.logoArea span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 22px;
+  font-weight: 500;
+  margin-left: 6px;
+  color: #fff;
+}
+
+.userGroup {
+  float: right;
+  height: 60px;
+  line-height: 58px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 13px;
+  margin-right: 38px;
+}
+
+.userGroup a {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.userGroup a:hover {
+  color: #fff;
+}
+
+.userGroup > * {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.userGroup img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.memuShowHide {
+  float: left;
+  width: 30px;
+  height: 26px;
+  line-height: 26px;
+  margin: 17px 20px;
+  color: #fff;
+  background-color: var(--primary-color);
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.09);
+}
+
+.memuShowHide svg {
+  margin-top: -3px;
+}
+
+.exit {
+  padding-left: 40px;
+  /*background: url('/yunyinght_04.png') 20px no-repeat; !* stylelint-disable-line *!*/
+}

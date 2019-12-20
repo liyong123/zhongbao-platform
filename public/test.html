@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://www.jfh.com/js/lib/biz.jquery.js"></script>
+  <script>
+    function onClickFetch(){
+      fetch(document.getElementById('url').value).then(function(response){
+        console.log('result', response);
+        document.getElementById('result').value = JSON.stringify(new Object(response));
+      }).catch(function(error){
+        console.error('error', response);
+        document.getElementById('result').value = JSON.stringify(response);
+      })
+    }
+  </script>
+</head>
+<body>
+  <div>
+    <h1>Ajax请求数据测试(原生fetch版)</h1>
+    url: <input id="url" value="http://njdev.jfh.com/jfyjop/op/test" type="text">
+    <button onclick="onClickFetch()">ajax send</button>
+    <div>
+      <textarea id="result"></textarea>
+    </div>
+  </div>
+</body>
+</html>

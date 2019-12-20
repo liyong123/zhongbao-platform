@@ -1,0 +1,5 @@
+@import '../../components/variables.css';
+
+:global(.ant-form-inline .ant-form-item) {
+  width: 100%;
+}

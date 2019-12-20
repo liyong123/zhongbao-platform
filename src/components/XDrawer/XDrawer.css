@@ -1,0 +1,14 @@
+:global(.ant-drawer-title) {
+  font-size: 16px;
+  color: #597ff3;
+  line-height: 22px;
+  font-weight: bold;
+}
+
+.opDrawer {
+  font-size: 14px;
+}
+
+.opDrawer :global(.ant-drawer-header) {
+  padding: 19px 38px;
+}

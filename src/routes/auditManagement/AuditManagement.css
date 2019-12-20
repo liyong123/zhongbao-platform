@@ -1,0 +1,12 @@
+@import '../../components/variables.css';
+
+.flexV {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.full {
+  flex-grow: 1;
+}
+

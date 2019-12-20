@@ -1,0 +1,10 @@
+@import '../../components/variables.css';
+
+.root {
+  height: 100%;
+}
+
+.iframe {
+  border: none;
+}
+

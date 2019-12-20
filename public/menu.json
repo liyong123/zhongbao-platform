@@ -1,0 +1,150 @@
+{
+  "desc":
+    "说明：每个菜单含有两个默认属性，'autoClear'和'stateName',autoClear默认为true, 用于在切换菜单时自动清理状态树；stateName默认为url的值，用于指定自动清理时所清理的状态树。",
+  "data": [
+    {
+      "name": "采购单位账户管理",
+      "icon": "icon-publishgoods_fill",
+      "id": "jf_yunji_admin_purchasing",
+      "children": [
+        {
+          "name": "采购单位账户管理",
+          "url": "/procurementAccount"
+        }
+      ]
+    },
+    {
+      "name": " 采购信息管理",
+      "icon": "icon-barrage_fill",
+      "id": "jf_yunji_admin_purchasing",
+      "children": [
+        {
+          "name": "采购信息与采购结果 ",
+          "url": "/procurementList"
+        }
+      ]
+    },
+    {
+      "name": "供应商账户管理",
+      "icon": "icon-shop_fill",
+      "id": "jf_yunji_admin_supplier",
+      "children": [
+        {
+          "name": "账户管理",
+          "url": "/accountManagement"
+        },
+        {
+          "name": "供应商审核列表",
+          "url": "/supplierExamList"
+        }
+      ]
+    },
+    {
+      "name": "专家管理",
+      "icon": "icon-group_fill",
+      "id": "jf_yunji_admin_expert",
+      "children": [
+        {
+          "name": "专家信息维护",
+          "url": "/expertList",
+          "oldOpUrl": "{OLD_OP}/expert/expertList"
+        },
+        {
+          "name": "专家抽取",
+          "url": "/underlineExpertManagerFb",
+          "oldOpUrl": "{OLD_OP}/expert/underlineExpertManagerFb"
+        },
+        {
+          "name": "线上评标专家抽取",
+          "url": "/publishListPage2",
+          "oldOpUrl": "{OLD_OP}/expert/publishListPage"
+        },
+        {
+          "name": "专家抽取记录",
+          "url": "/expertEvaluationPage",
+          "oldOpUrl": "{OLD_OP}/expert/expertEvaluationPage"
+        }
+      ]
+    },
+    {
+      "name": "专家抽取与通知",
+      "icon": "icon-remind_fill",
+      "id": "jf_yunji_service_manager",
+      "children": [
+        {
+          "name": "专家抽取申请",
+          "url": "/underlineExpertManager",
+          "oldOpUrl": "{OLD_OP}/expert/underlineExpertManager"
+        }
+      ]
+    },
+    {
+      "name": "需求管理",
+      "icon": "icon-document_fill",
+      "id": "jf_yunji_admin_demand",
+      "children": [
+        {
+          "name": "需求跟踪管理",
+          "url": "/publishListPage",
+          "oldOpUrl": "{OLD_OP}/orders/publishListPage"
+        },
+        {
+          "name": "成交公告管理",
+          "url": "/DealPublishManagement",
+          "oldOpUrl": "{OLD_OP}/limitNotice/noticeManager"
+        }
+      ]
+    },
+    {
+      "name": "模板管理",
+      "icon": "icon-manage_fill",
+      "id": "jf_yunji_admin_template",
+      "children": [
+        {
+          "name": "模板列表",
+          "url": "/templateList"
+        },
+        {
+          "name": "模板变量列表",
+          "url": "/templateTypeList"
+        }
+      ]
+    },
+    {
+      "name": "行为审查",
+      "icon": "icon-browse_fill",
+      "id": "jf_yunji_admin_template",
+      "children": [
+        {
+          "name": "行为审查",
+          "url": "/examine",
+          "oldOpUrl": "{OLD_OP}/examine/index"
+        }
+      ]
+    },
+    {
+      "name": "项目跟踪管理",
+      "icon": "icon-stealth_fill",
+      "id": "jf_yunji_admin_template",
+      "children": [
+        {
+          "name": "项目跟踪管理",
+          "url": "/orderStageShow",
+          "oldOpUrl": "{OLD_OP}/owe/orderStageShow"
+        }
+      ]
+    },
+    {
+      "name": "订阅设置",
+      "icon": "icon-setup_fill",
+      "id": "jf_yunji_admin_template",
+      "children": [
+        {
+          "name": "消息推送设置",
+          "url": "/subscribe",
+          "oldOpUrl": "{OLD_OP}/subscribe/index"
+        }
+      ]
+    }
+  ]
+}

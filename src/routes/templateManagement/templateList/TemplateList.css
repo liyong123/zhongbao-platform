@@ -1,0 +1,58 @@
+@import '../../../components/variables.css';
+
+audio,
+canvas,
+iframe,
+img,
+video {
+  vertical-align: initial;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.full {
+  flex-grow: 1;
+}
+
+.btns {
+  padding: 15px 0;
+  text-align: right;
+}
+
+:global(.editor) {
+  border: 1px solid #f5222d !important;
+}
+
+:global(.form-tip) {
+  color: #f5222d;
+}
+
+:global(.ant-form-inline .ant-form-item) {
+  width: 100%;
+}
+
+:global(.name .ant-form-item-label:before) { /* stylelint-disable-line */
+  display: inline-block;
+  margin-right: 4px;
+  content: '*';
+  font-family: SimSun; /* stylelint-disable-line */
+  line-height: 1;
+  font-size: 14px;
+  color: #f5222d;
+}
+
+.file {
+  margin-right: 25px;
+  color: #5f97d8;
+  vertical-align: middle;
+}
+
+.file > i {
+  vertical-align: middle;
+  color: #333;
+  cursor: pointer;
+  margin-left: 5px;
+}

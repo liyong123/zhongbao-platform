@@ -1,0 +1,247 @@
+html, body {
+  width:100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+body{
+  font-size: 14px;
+  font-family: '微软雅黑';
+  background-color: #fff;
+}
+
+*{
+  margin: 0;
+}
+
+*, :after, :before{
+  box-sizing: border-box;
+}
+
+.clearfix:before,.clearfix:after {
+  content: '';
+  display: table;
+}
+
+.clearfix :after {
+  clear: both;
+}
+
+.header {
+  height: 70px;
+  background-color: #597ff3;
+}
+
+.basicMessageAll {
+  height: 60px;
+
+  /*margin-top: 10px;*/
+  border-bottom: solid 1px #f0a33f;
+}
+
+.basicMessage {
+  width: 1000px;
+
+  /*margin: 0 auto;*/
+  height: 100%;
+}
+
+.basicMessageEach {
+  float: left;
+  width: 225px;
+  padding: 0;
+  margin-right: 0;
+}
+
+.basicMessageEach2 {
+  padding-top: 32px;
+  width: 200px;
+}
+
+.basicMessageEach2 span {
+  color: #666;
+  font-size: 14px;
+}
+
+.basicMessageEach2 span:nth-child(2) {
+  color: #000;
+  margin-left: 10px;
+}
+
+.basicMessageEach img {
+  display: block;
+  float: left;
+  width: 44px;
+  height: 44px;
+}
+
+.basicComName {
+  /*margin-left: 5px;*/
+  float: left;
+}
+
+.basicComName div:first-child {
+  color: #333;
+  font-size: 20px;
+  width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.basicComName div:nth-child(2) {
+  margin-top: 3px;
+}
+
+.basicComName div:nth-child(2) span {
+  color: #597ff3;
+  font-size: 14px;
+  display: block;
+  float: left;
+  margin-right: 5px;
+}
+
+.basicComName div:nth-child(2) span:first-child {
+  padding-top: 1px;
+  font-size: 16px;
+  line-height: 14px;
+}
+
+.detailMessageAll {
+  width: 1000px;
+
+  /* margin: 0 auto; */
+  padding: 20px;
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.detailMessageEach {
+  height: 38px;
+  line-height: 32px;
+}
+
+.detailMessageEach div {
+  float: left;
+  font-size: 15px;
+  width: 50%;
+}
+
+.detailMessageEach div span {
+  display: inline-block;
+}
+
+.detailMessageEach div span:first-child {
+  color: #8b8989;
+  width: 165px;
+  margin-right: 40px;
+}
+
+.detailMessageEach div span:nth-child(2) {
+  color: #444;
+  width: 240px;
+}
+
+.detailMessageEach div img {
+  height: 120px;
+  width: 185px;
+  display: inline-block;
+  background-color: #eee;
+  border: solid 1px #eee;
+}
+
+.detailMessageEach .eachLabel {
+  color: #8b8989;
+  width: 165px;
+  margin-right: 40px;
+}
+
+.eachImgDiv {
+  background: url('../../../../public/images/imgBkg.png') no-repeat;
+  float: left;
+  width: 235;
+  height: 173;
+  padding: 25px;
+}
+
+.eachImgDiv img {
+  width: 185px;
+  height: 120px;
+}
+
+.auditSteps {
+  width: 1000px;
+  padding: 30px 0;
+
+  /*margin: 0 auto;*/
+}
+
+.auditStepsTitle {
+  height: 20px;
+  line-height: 20px;
+}
+
+.auditStepsTitle span {
+  display: inline-block;
+  float: left;
+  margin-right: 5px;
+}
+
+.auditStepsTitle span:first-child {
+  width: 3px;
+  height: 20px;
+  background-color: #597ff3;
+}
+
+.auditStepsTitle span:nth-child(2) {
+  color: #333;
+  font-size: 16px;
+}
+
+.platformAuditSteps {
+  padding: 20px 0;
+}
+
+.platformAuditSteps div {
+  margin-bottom: 15px;
+}
+
+.platformAuditSteps table td {
+  padding: 3px 20px 0 0;
+  font-weight: 500;
+}
+
+.platformAuditSteps table tr > td:nth-child(1) {
+  width: 200px;
+  color: #666;
+}
+
+.block_detail {
+  border-top: solid 1px #e5e5e5;
+  margin: 15px 20px;
+}
+
+.block_title {
+  color: #333;
+  margin: 0 0 15px 0;
+  line-height: 55px;
+}
+
+.content_label {
+  line-height: 35px;
+}
+
+.topBarMsg {
+  margin-left: 70px;
+  font-size: 14px;
+}
+
+.topBarMsg > span:nth-child(1) {
+  color: #666;
+  padding-right: 10px;
+}
+
+.topBarMsg > span:nth-child(2) {
+  color: #4a4a4a;
+  font-weight: 600;
+}
+

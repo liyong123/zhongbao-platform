@@ -1,0 +1,75 @@
+@import '../../components/variables.css';
+
+:global(.ant-form-item-label) {
+  color: #666;
+}
+
+.itemRow {
+  margin: 5px 0;
+}
+
+.itemLabelCol {
+  display: inline-block;
+  width: 30%;
+  padding-right: 5px;
+  text-align: right;
+  color: #000;
+}
+
+.itemWrapperCol {
+  display: inline-block !important;
+  width: 68% !important;
+}
+
+.formItemCol {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.formItemBtnCol {
+  display: inline-block;
+  margin-bottom: 5px;
+  float: right;
+  text-align: right;
+}
+
+@media screen and (min-width: 1480px) {
+  .formItemCol {
+    width: 25%;
+  }
+
+  .formItemBtnCol {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 1479.999px) {
+  .formItemCol {
+    width: 33.33%;
+  }
+
+  .formItemBtnCol {
+    width: 33.33%;
+  }
+}
+
+@media screen and (min-width: 1480px) and (max-width: 1700px) {
+  .itemLabelCol {
+    width: 38%;
+  }
+
+  .itemWrapperCol {
+    width: 60% !important;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .itemLabelCol {
+    width: 35%;
+  }
+
+  .itemWrapperCol {
+    width: 63% !important;
+  }
+}
+

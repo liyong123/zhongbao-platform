@@ -1,0 +1,13 @@
+@import '../../components/variables.css';
+
+.editContentL {
+  content: '';
+}
+
+.editContentL :global(.ant-form-item-label) {
+  color: #666;
+}
+
+.editContentL :global(.ant-col-8) {
+  min-width: 415px !important;
+}

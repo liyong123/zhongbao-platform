@@ -1,0 +1,35 @@
+@import '../../components/variables.css';
+
+.anotherLabel {
+  display: inline-block;
+  line-height: 39px;
+  width: 80px;
+  text-align: right;
+}
+
+.radioGrpShzt {
+  font-size: 14px;
+}
+
+:global(.ant-radio-button-wrapper) {
+  margin-right: 0 !important;
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  font-weight: 500;
+}
+
+:global(.ant-radio-button-wrapper)::before {
+  display: none !important;
+}
+
+:global(.ant-radio-button-wrapper.ant-radio-button-wrapper-checked) {
+  margin-right: 10px;
+  border: none !important;
+  background: none !important;
+  color: var(--primary-color) !important;
+}
+
+.radioGrpShzt :global(.ant-radio-button-wrapper:first-child) {
+  border-radius: 4px;
+}

@@ -1,0 +1,112 @@
+.selectFile {
+  float: right;
+  width: 200px;
+  margin-right: 30px;
+}
+
+.infoList {
+  max-height: 320px;
+  margin: 0 auto;
+  margin-top: 25px;
+  color: #666;
+  overflow-y: auto;
+  line-height: 26px;
+  font-size: 14px;
+}
+
+/* 滚动条样式 */
+
+.infoList::-webkit-scrollbar {
+  width: 8px;
+}
+
+.infoList::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 5px #999;
+  box-shadow: inset 0 0 5px #999;
+  background: #999;
+}
+
+.infoList::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px #dfdfdf;
+  box-shadow: inset 0 0 5px #dfdfdf;
+  border-radius: 5px;
+  background: #dfdfdf;
+  border: 1px solid #dfdfdf;
+}
+
+.tbody {
+  color: #777;
+}
+
+.tableListClass {
+  border-right: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  border-collapse: collapse;
+}
+
+.tableListClass td,
+.tableListClass th {
+  border-left: 1px solid #dfdfdf;
+  border-top: 1px solid #dfdfdf;
+  padding: 5px 15px;
+}
+
+.tableTitle {
+  font-weight: bold;
+  word-break: break-all;
+  vertical-align: top;
+}
+
+.buttonBottom {
+  padding-top: 12.5px;
+  border-top: 1px dashed #e5e5e5;
+  text-align: right;
+  position: absolute;
+  bottom: 12.5px;
+  right: 15px;
+  left: 15px;
+}
+
+.button {
+  margin-left: 10px;
+}
+
+:global(.ant-modal-header) {
+  background-color: var(--primary-color);
+}
+
+:global(.ant-modal-close) {
+  color: #fff;
+}
+
+:global(.ant-modal-close:hover) {
+  color: #fff;
+}
+
+:global(.ant-modal-title) {
+  color: #fff;
+}
+
+:global(.ant-upload-list-text) {
+  display: inline-block;
+  color: #333;
+}
+
+:global(.anticon-paper-clip) {
+  display: none;
+}
+
+:global(.ant-upload-list-item-name) {
+  color: #666;
+  line-height: 14px;
+}
+
+:global(.ant-modal-content) {
+  width: 641px;
+}
+
+:global(.ant-modal-body) {
+  min-height: 425px;
+  position: relative;
+}

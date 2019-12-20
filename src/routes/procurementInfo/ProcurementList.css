@@ -1,0 +1,11 @@
+@import '../../components/variables.css';
+
+.full {
+  /*flex-grow: 1;*/
+}
+
+:global(.ant-form-inline .ant-form-item) {
+  width: 100%;
+}
+
+

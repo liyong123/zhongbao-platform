@@ -1,0 +1,538 @@
+/* stylelint-disable */
+@import '../variables.css';
+
+/*
+ * normalize.css is imported in JS file.
+ * If you import external CSS file from your internal CSS
+ * then it will be inlined and processed with CSS modules.
+ */
+
+/*
+ * Base styles
+ * ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em; /* ~16px; */
+  font-family: var(--font-family-base);
+  line-height: 1.375; /* ~22px */
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-hover-color);
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/*
+ * Browser upgrade prompt
+ * ========================================================================== */
+
+:global(.browserupgrade) {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/*
+ * Print styles
+ * Inlined to avoid the additional HTTP request:
+ * http://www.phpied.com/delay-loading-your-print-css/
+ * ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster: http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: none;
+  }
+
+  a[href]::after {
+    content: ' (' attr(href) ')';
+  }
+
+  abbr[title]::after {
+    content: ' (' attr(title) ')';
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^='#']::after,
+  a[href^='javascript:']::after {
+    content: '';
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+body {
+  font-size: 13px;
+  font-family: '微软雅黑';
+  background-color: #fff;
+
+  /*min-height: 700px;*/
+
+  /*overflow: scroll;*/
+  overflow-y: hidden;
+}
+
+:global(.isMobile body) {
+  min-width: 1200px;
+  min-height: 600px;
+}
+
+:global(.embed body) {
+  min-width: inherit;
+  min-height: inherit;
+}
+
+* {
+  margin: 0;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+:global(.clearfix:before,.clearfix:after) {
+  content: '';
+  display: table;
+}
+
+:global(.clearfix:after) {
+  clear: both;
+}
+
+.layoutAll {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 1280px;
+}
+
+.mainContentAll {
+  /*position: absolute;*/
+
+  /*top: 0;*/
+
+  /*left: 0;*/
+
+  /*right: 0;*/
+
+  /*bottom: 0;*/
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: transparent;
+}
+
+.mainContentRight {
+  position: absolute;
+  top: 61px;
+  right: 0;
+  bottom: 0;
+  overflow-y: hidden;
+}
+
+.mainContentRight2 {
+  left: 230px;
+}
+
+.mainContentRight3 {
+  left: 70px;
+}
+
+:global(#app) {
+  width: 100%;
+  height: 100%
+}
+
+.pageTitle {
+  /*padding: 18px 15px 22px 26px;*/
+  font-size: 18px;
+  color: #0C0C0C;
+  line-height: 22px;
+  margin: 20px 0 11px 0;
+  padding-left: 4px;
+  border-left: 3px solid var(--primary-color);
+}
+
+/*.contentOperationArea {*/
+
+/*position: absolute;*/
+
+/*background-color: #fff;*/
+
+/*top: 50px;*/
+
+/*left: 15px;*/
+
+/*bottom: 15px;*/
+
+/*right: 15px;*/
+
+/*padding: 8px;*/
+
+/*}*/
+
+.contentOperationArea {
+  background-color: #fff;
+  padding: 0 11px 22px 11px;
+  /*margin: 14px;*/
+  /*min-width: 1190px;*/
+  /*modified by liy 2019/1/21*/
+}
+
+.contentOperationArea.hideTitle {
+  top: 10px;
+}
+
+.full .contentOperationArea {
+  height: 100%;
+  top: 0;
+  margin: 0;
+}
+
+:global(.searchArea) {
+  padding-bottom: 4px;
+}
+
+:global(.searchBts) {
+  margin-top: 10px;
+  text-align: right;
+}
+
+:global(.ant-btn a) {
+  color: var(--primary-color);
+  margin-left: 8px;
+}
+
+:global(.ant-btn:hover a) {
+  color: #fff;
+}
+
+/* 列表页根元素样式 */
+:global(.root) {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* 列表页列表容器样式 */
+:global(.full) {
+  /*flex-grow: 1;*/
+
+  /*overflow: hidden;*/
+}
+
+/* 列表页工具条样式 */
+:global(.toolBar) {
+  margin: 10px 0 6px 0;
+  text-align: left;
+}
+
+/* 列表页工具条按钮样式 */
+
+:global(.toolBar) > button,
+:global(.toolBar) > a {
+  margin-right: 10px !important;
+}
+
+:global(.queryButtons) > button,
+:global(.queryButtons) > a {
+  margin: 5px 0 5px 5px !important;
+}
+
+:global(.ant-form-item-label) {
+  text-overflow: ellipsis;
+}
+
+/* 富文本编辑器样式修改 */
+
+:global(.editor-container .editor-contenteditable-div .editable-range) {
+  margin: 0 15px !important;
+}
+
+.midDiv {
+  height: 100%;
+}
+
+:global(.query-table) {
+  width: 100%;
+  color: #666;
+}
+
+:global(.query-table > tbody > tr > td.label) {
+  padding-left: 15px;
+}
+
+:global(.query-table > tbody > tr) {
+  height: 38px;
+}
+
+:global(.query-table > tbody > tr:not(:last-child) > td) {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+:global(.section) {
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 20px 0 13px 0
+}
+
+:global(.section > span) {
+  border-left: 2px solid var(--primary-hover-color);
+  padding-left: 7px;
+}
+
+:global(.detail-sub-title) {
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  background-color: var(--primary-light-color);
+  color: var(--primary-color);
+  padding-left: 38px;
+  margin-top: -1px;
+}
+
+:global(.detail-container) {
+  padding: 0 56px 0 38px;
+}
+
+:global(.detail-table) {
+  margin: 10px 0;
+  color: #666;
+  font-size: 13px;
+}
+
+:global(.detail-table > tbody > tr > td:nth-child(odd)):before {
+  content: '';
+  width: 3px;
+  height: 3px;
+  background-color: var(--primary-color);
+  border-radius: 1.5px;
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+:global(.edit-table) {
+  margin: 10px 0;
+  color: #666;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+:global(.edit-table .ant-form-item) {
+  margin-bottom: 0;
+}
+
+:global(.edit-table .ant-form-item) {
+  display: inline-block;
+}
+
+:global(.edit-table .ant-form-item .ant-form-item-control) {
+  line-height: 30px;
+}
+
+:global(.edit-table .ant-form-item-control):before,
+:global(.edit-table .ant-form-item):before {
+  display: none !important;
+}
+
+:global(.edit-table .ant-form-item-control):after,
+:global(.edit-table .ant-form-item):before {
+  display: none !important;
+}
+
+:global(.edit-table tr td) {
+  padding: 5px 0;
+  line-height: 30px;
+  vertical-align: top;
+}
+
+:global(.edit-table tr td.label) {
+  padding: 5px 0 5px 11px;
+}
+
+:global(.edit-table tr td.required) {
+  padding: 5px 0;
+}
+
+:global(.edit-table tr td.required):before {
+  display: inline-block;
+  margin-right: 4px;
+  content: '*';
+  font-family: SimSun;
+  line-height: 1;
+  font-size: 14px;
+  color: #f5222d;
+}
+
+:global(.status-tag) {
+  padding: 2px 13px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+:global(.status-tag.green) {
+  color: #2bb569;
+  border: 1px solid #2bb569;
+  background-color: #d1f5e1;
+}
+
+:global(.status-tag.orange) {
+  color: #f0a33f;
+  border: 1px solid #f0a33f;
+  background-color: #f3e4d2;
+}
+
+:global(.status-tag.red) {
+  color: rgb(254, 59, 17);
+  border: 1px solid rgb(254, 59, 17);
+  background-color: rgb(243, 212, 203);
+}
+
+:global(.detail-table .last) {
+  border-right: 1px dashed #e5e5e5;
+}
+
+/* 富文本编辑器预览样式 */
+:global(.editor-container) {
+  color: #000;
+  font-size: 16px;
+}
+
+:global(.editor-container) p {
+  margin: 5px 0;
+}
+
+:global(.query-reset-btn) {
+  color: #666666;
+  letter-spacing: 3px;
+}
+
+:global(.query-reset-btn):hover {
+  color: #4a4a4a;
+}

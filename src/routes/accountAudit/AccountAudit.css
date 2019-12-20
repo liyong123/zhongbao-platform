@@ -1,0 +1,80 @@
+@import '../../components/variables.css';
+
+
+.topic {
+  font-size: 20px;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.block_detail {
+  border: 1px dashed #dedede;
+  border-radius: 6px;
+  margin: 15px 0;
+  padding: 0 0 15px 0;
+}
+
+.block_title {
+  color: #333;
+  background-color: #eee;
+  margin: 0 0 15px 0;
+  padding-left: 15px;
+  line-height: 55px;
+}
+
+.content_label {
+  line-height: 35px;
+}
+
+.content_textarea {
+  padding: 0 15px;
+}
+
+.unverified {
+  color: #db6e15;
+}
+
+.to_audit {
+  color: #f00;
+}
+
+.immediately_audit {
+  color: #00f;
+  cursor: pointer;
+}
+
+.verified {
+  color: #008000;
+}
+
+.none_verified {
+  color: #df0000;
+}
+
+.button {
+  margin-right: 15px;
+}
+
+.look {
+  display: inline-block;
+  margin-left: 50px;
+  color: #fff;
+  margin-right: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  float: right;
+  background: url(../../../public/images/look_arrow.png);
+  background-position: right 5px center;
+  background-repeat: no-repeat;
+  background-color: var(--primary-color);
+  padding: 0 35px 0 10px;
+}
+
+.look:hover {
+  color: #fff;
+}
+
+

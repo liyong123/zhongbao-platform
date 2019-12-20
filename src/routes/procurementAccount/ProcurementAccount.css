@@ -1,0 +1,53 @@
+@import '../../components/variables.css';
+
+.lookSpan {
+  border-right: 1px solid #dfdfdf;
+  display: inline-block;
+  line-height: 15px;
+  text-align: center;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 14px;
+  padding:0 5px;
+}
+
+.buttonSpan {
+  margin: 0 5px;
+  display: inline-block;
+  text-align: center;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.modalReast {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  line-height: 55px;
+}
+
+.modalButton {
+  margin-left: 38%;
+}
+
+:global(.ant-upload-list-text) {
+  display: inline-block;
+  color: #333;
+}
+
+:global(.ant-modal-content) {
+  width: 300px;
+}
+
+:global(.ant-modal-body) {
+  height: 150px;
+}
+
+:global(.ant-input) {
+  border: 1px solid #dfdfdf;
+}
+
+:global(.ant-form-item-label label) {
+  color: #666 !important;
+}

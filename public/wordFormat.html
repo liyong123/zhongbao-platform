@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body>
+<div class="content">
+    <h1 style="padding: 5px; font-size: 16px;">WORD一键排版</h1>
+    <div style="padding: 0 20px;">
+        <div>
+            <input type="checkbox" value="1" checked id="delSpace">
+            <label for="delSpace">去除首行空格</label>
+        </div>
+        <div>
+            <div>
+                <input type="checkbox" checked value="2" id="isNumbers">
+                <label for="isNumbers">调整编号布局</label>
+            </div>
+            <div id="numbersCon" style="padding-left:20px;display: none;">
+                <input type="radio" name="numbers" value="2" checked id="simple">
+                <label for="simple">调整"1.1.1"模式的编号布局（推荐）</label>
+                <input type="radio" name="numbers" value="4" id="complex">
+                <label for="complex">调整所有编号布局</label>
+            </div>
+        </div>
+
+
+        <div style="padding: 10px 20px;">
+            <button id="do" class="edui-default">执行</button>
+        </div>
+    </div>
+</div>
+<!--页面中一定要引入internal.js为了能直接使用当前打开dialog的实例变量-->
+<!--internal.js默认是放到dialogs目录下的-->
+<script type="text/javascript" src="./dialogs/internal.js"></script>
+<script src="https://www.jfh.com/js/lib/biz.jquery.js"></script>
+<script>
+    //可以直接使用以下全局变量
+    //当前打开dialog的实例变量
+//    alert('editor: '+editor);
+    //一些常用工具
+//    alert('domUtils: '+domUtils);
+//    alert('utils: '+utils);
+//    alert('browser: '+browser);
+    if(true || parent.location.href.indexOf('test=true')!=-1){
+        $('#numbersCon').show();
+        $('#isNumbers').change(function(){
+            if($('#isNumbers:checked').val()){
+                $('#numbersCon').show();
+            } else {
+                $('#numbersCon').hide();
+            }
+        });
+    }
+
+    $('#do').click(function(){
+        var numbers;
+        if($('#numbersCon').css('display') == 'none'){
+            numbers = $('#isNumbers:checked').val();
+        } else {
+            numbers = $('input[name=numbers]:checked').val();
+        }
+        var options = {
+            delSpace: $('#delSpace:checked').val(),
+            numbers: numbers
+        };
+        var ed = window.editor || parent._editor;
+        if(ed){
+            ed.execCommand('tt', options);
+        } else {
+            alert('格式化失败，推荐使用Chrome浏览器')
+        }
+
+    })
+</script>
+</body>
+</html>

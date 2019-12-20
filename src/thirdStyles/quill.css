@@ -1,0 +1,5 @@
+:global(.ql-snow .ql-picker){
+  line-height: 22px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}

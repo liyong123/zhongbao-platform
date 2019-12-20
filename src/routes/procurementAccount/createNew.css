@@ -1,0 +1,73 @@
+@import '../../components/variables.css';
+
+.createContentL {
+  content: '';
+}
+
+.createContentL :global(.ant-form-item-label) {
+  color: #666;
+}
+
+.title {
+  width: 100%;
+  font-size: 14px;
+  color: #4a4a4a;
+  line-height: 22px;
+  margin: 10px 0 15px 0;
+  padding: 0 10px 10px 0;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.extra {
+  margin-top: -10px;
+  font-size: 14px;
+  color: #9b9b9b;
+  line-height: 22px;
+}
+
+.redHint {
+  color: #2bb569;
+  margin-left: 25px;
+  display: inline-block;
+}
+
+.redHint.alert {
+  color: #ff1712;
+}
+
+.returnListClass {
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #666;
+  cursor: pointer;
+}
+.returnListClass:hover {
+  color: #4a4a4a;
+}
+
+.createContentL :global(.ant-upload-list-text) {
+  display: inline-block;
+  color: #333;
+}
+
+.createContentL :global(.ant-modal-content) {
+  width: 300px;
+}
+
+.createContentL :global(.ant-modal-body) {
+  height: 150px;
+}
+
+.createContentL :global(.ant-input) {
+  border: 1px solid #dfdfdf;
+}
+
+.createContentL :global(.ant-form-item-label label) {
+  color: #666 !important;
+}
+
+
+.createContentL :global(.ant-col-8) {
+  min-width: 415px !important;
+}

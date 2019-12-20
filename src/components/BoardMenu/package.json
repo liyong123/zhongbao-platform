@@ -1,0 +1,6 @@
+{
+  "name": "BoardMenu",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./BoardMenu.js"
+}

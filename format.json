@@ -1,0 +1,21 @@
+{
+  "id": null,
+  "buIdSecret": "NTIzMjY7NTg=",
+  "buid": 52326,
+  "buName": "江宁区高新企业",
+  "ownerId": 2346864711,
+  "ownerName": null,
+  "ownerMobile": "18551845050",
+  "applayfrom": "NJ",
+  "accountStatus": 4,
+  "authSatus": null,
+  "note": null,
+  "bulicenseCode": null,
+  "auditStatus": null,
+  "isVip": 0,
+  "buInfoUrl":
+    "/yjhrm/buinfo/showbuinfo?buIdSecret=NTIzMjY7NzM=&njtype=nanjing",
+  "owerUrl": null,
+  "authUrl": "/jfnjop/serviceaccount/toShowInfo?buIdSecret=NTIzMjY7ODE=",
+  "authSatusStr": "未认证"
+}

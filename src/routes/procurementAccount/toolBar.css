@@ -1,0 +1,5 @@
+@import '../../components/variables.css';
+
+:global(.ant-form-item-label) {
+  color: #666;
+}

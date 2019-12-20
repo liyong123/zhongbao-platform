@@ -1,0 +1,62 @@
+@import '../../components/variables.css';
+
+:global(.ant-form-item-label) {
+  color: #666;
+}
+
+.block {
+  width: 90%;
+  border-bottom: 1px dashed #e5e5e5;
+  padding: 15px 0;
+  margin-left: 4%;
+}
+
+.topic {
+  width: 90%;
+  margin-left: 4%;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--primary-color);
+  padding: 10px 0;
+}
+
+.title {
+  width: 100%;
+  font-size: 14px;
+  color: #4a4a4a;
+  line-height: 22px;
+  margin: 10px 0 15px 0;
+  padding: 0 10px 10px 0;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.contentList {
+  line-height: 25px;
+  margin: 8px 0 7px 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+.labelCon {
+  color: #b6b6b6;
+}
+
+.labelCon::before {
+  display: inline-block;
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  margin-right: 5px;
+}
+
+:global(.ant-input) {
+  border: 1px solid #dfdfdf;
+}
+
+:global(.ant-form-item-label label) {
+  color: #666 !important;
+}
+
