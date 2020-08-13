@@ -50,7 +50,7 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0",
     "sequelize": "^4.37.3",
-    "serialize-javascript": "^1.4.0",
+    "serialize-javascript": "^3.1.0",
     "source-map-support": "^0.5.4",
     "universal-router": "^6.0.0",
     "whatwg-fetch": "^2.0.3"
