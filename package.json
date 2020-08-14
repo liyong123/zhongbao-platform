@@ -131,7 +131,7 @@
     "url-loader": "^1.0.1",
     "webpack": "^4.2.0",
     "webpack-assets-manifest": "^2.0.0",
-    "webpack-bundle-analyzer": "^2.11.1",
+    "webpack-bundle-analyzer": "^3.3.2",
     "webpack-dev-middleware": "^3.0.1",
     "webpack-hot-middleware": "^2.21.2",
     "webpack-node-externals": "^1.6.0"
